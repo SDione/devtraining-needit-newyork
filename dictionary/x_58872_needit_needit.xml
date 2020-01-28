@@ -2,6 +2,7 @@
     <element audit="true" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Description" max_length="4000" name="u_jdesc_2" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Priority" mandatory="true" max_length="40" name="u_priority_1" type="string">
             <choice>
                 <element inactive_on_update="false" label="Level 1" sequence="0" value="level 1"/>
@@ -30,6 +31,7 @@
                 <element inactive_on_update="false" label="Legal 2" sequence="5" value="legal2"/>
                 <element inactive_on_update="false" label="Your Department Choice 1" sequence="6" value="your_choice1"/>
                 <element inactive_on_update="false" label="Your Department Choice 2" sequence="7" value="your_choice2"/>
+                <element inactive_on_update="false" label="Other" sequence="8" value="other"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
